@@ -35,10 +35,10 @@ namespace ProjetoMosquitoVelho
             this.txtValor1 = new System.Windows.Forms.TextBox();
             this.txtValor2 = new System.Windows.Forms.TextBox();
             this.gpbOperacao = new System.Windows.Forms.GroupBox();
-            this.rbtnSoma = new System.Windows.Forms.RadioButton();
-            this.rbtnSub = new System.Windows.Forms.RadioButton();
-            this.rbtnMult = new System.Windows.Forms.RadioButton();
             this.rbtnDiv = new System.Windows.Forms.RadioButton();
+            this.rbtnMult = new System.Windows.Forms.RadioButton();
+            this.rbtnSub = new System.Windows.Forms.RadioButton();
+            this.rbtnSoma = new System.Windows.Forms.RadioButton();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lblResp = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
@@ -99,27 +99,16 @@ namespace ProjetoMosquitoVelho
             this.gpbOperacao.TabStop = false;
             this.gpbOperacao.Text = "Operações";
             // 
-            // rbtnSoma
+            // rbtnDiv
             // 
-            this.rbtnSoma.AutoSize = true;
-            this.rbtnSoma.Location = new System.Drawing.Point(6, 25);
-            this.rbtnSoma.Name = "rbtnSoma";
-            this.rbtnSoma.Size = new System.Drawing.Size(74, 24);
-            this.rbtnSoma.TabIndex = 2;
-            this.rbtnSoma.TabStop = true;
-            this.rbtnSoma.Text = "&Somar";
-            this.rbtnSoma.UseVisualStyleBackColor = true;
-            // 
-            // rbtnSub
-            // 
-            this.rbtnSub.AutoSize = true;
-            this.rbtnSub.Location = new System.Drawing.Point(6, 55);
-            this.rbtnSub.Name = "rbtnSub";
-            this.rbtnSub.Size = new System.Drawing.Size(83, 24);
-            this.rbtnSub.TabIndex = 3;
-            this.rbtnSub.TabStop = true;
-            this.rbtnSub.Text = "Su&btrair";
-            this.rbtnSub.UseVisualStyleBackColor = true;
+            this.rbtnDiv.AutoSize = true;
+            this.rbtnDiv.Location = new System.Drawing.Point(6, 115);
+            this.rbtnDiv.Name = "rbtnDiv";
+            this.rbtnDiv.Size = new System.Drawing.Size(69, 24);
+            this.rbtnDiv.TabIndex = 5;
+            this.rbtnDiv.TabStop = true;
+            this.rbtnDiv.Text = "&Dividir";
+            this.rbtnDiv.UseVisualStyleBackColor = true;
             // 
             // rbtnMult
             // 
@@ -132,16 +121,27 @@ namespace ProjetoMosquitoVelho
             this.rbtnMult.Text = "&Multiplicar";
             this.rbtnMult.UseVisualStyleBackColor = true;
             // 
-            // rbtnDiv
+            // rbtnSub
             // 
-            this.rbtnDiv.AutoSize = true;
-            this.rbtnDiv.Location = new System.Drawing.Point(6, 115);
-            this.rbtnDiv.Name = "rbtnDiv";
-            this.rbtnDiv.Size = new System.Drawing.Size(69, 24);
-            this.rbtnDiv.TabIndex = 5;
-            this.rbtnDiv.TabStop = true;
-            this.rbtnDiv.Text = "&Dividir";
-            this.rbtnDiv.UseVisualStyleBackColor = true;
+            this.rbtnSub.AutoSize = true;
+            this.rbtnSub.Location = new System.Drawing.Point(6, 55);
+            this.rbtnSub.Name = "rbtnSub";
+            this.rbtnSub.Size = new System.Drawing.Size(83, 24);
+            this.rbtnSub.TabIndex = 3;
+            this.rbtnSub.TabStop = true;
+            this.rbtnSub.Text = "Su&btrair";
+            this.rbtnSub.UseVisualStyleBackColor = true;
+            // 
+            // rbtnSoma
+            // 
+            this.rbtnSoma.AutoSize = true;
+            this.rbtnSoma.Location = new System.Drawing.Point(6, 25);
+            this.rbtnSoma.Name = "rbtnSoma";
+            this.rbtnSoma.Size = new System.Drawing.Size(74, 24);
+            this.rbtnSoma.TabIndex = 2;
+            this.rbtnSoma.TabStop = true;
+            this.rbtnSoma.Text = "&Somar";
+            this.rbtnSoma.UseVisualStyleBackColor = true;
             // 
             // lblResultado
             // 
@@ -176,6 +176,7 @@ namespace ProjetoMosquitoVelho
             this.btnCalcular.Text = "&Calcular";
             this.btnCalcular.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnLimpar
             // 
@@ -191,6 +192,7 @@ namespace ProjetoMosquitoVelho
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSair
             // 
@@ -206,6 +208,7 @@ namespace ProjetoMosquitoVelho
             this.btnSair.Text = "Sai&r";
             this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmCalculadora
             // 
