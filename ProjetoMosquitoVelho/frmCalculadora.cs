@@ -61,22 +61,22 @@ namespace ProjetoMosquitoVelho
             {
                 if (num2 == 0)
                 {
-                  MessageBox.Show("impossivel divisão por " + num2, "SistemaABC", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                    MessageBox.Show("impossivel divisão por " + num2, "SistemaABC", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                     //executar o metodo limpar campos
 
                     limparCampos();
 
-                  //exemplo:
-                  //MessageBox.Show("impossivel divisão por 0", "SistemaABC", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                    //exemplo:
+                    //MessageBox.Show("impossivel divisão por 0", "SistemaABC", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
 
                 }
                 else
                 {
                     resp = op.dividir(num1, num2);
-                }           
+                }
 
             }
-            
+
 
             lblResp.Text = resp.ToString();
 
@@ -91,7 +91,7 @@ namespace ProjetoMosquitoVelho
         {
             Application.Exit();
         }
-
+        // testando git em casa
 
     }
 }
