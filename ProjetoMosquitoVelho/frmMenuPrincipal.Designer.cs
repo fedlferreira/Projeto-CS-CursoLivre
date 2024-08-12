@@ -74,15 +74,20 @@ namespace ProjetoMosquitoVelho
             this.btnClientes.Size = new System.Drawing.Size(160, 150);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "&Clientes";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClientes.UseVisualStyleBackColor = true;
             // 
             // btnUsuarios
             // 
+            this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
             this.btnUsuarios.Location = new System.Drawing.Point(215, 219);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(160, 150);
             this.btnUsuarios.TabIndex = 5;
             this.btnUsuarios.Text = "&Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnUsuarios.UseVisualStyleBackColor = true;
             // 
             // btnProdutos
