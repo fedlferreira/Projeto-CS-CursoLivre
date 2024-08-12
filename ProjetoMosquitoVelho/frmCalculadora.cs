@@ -33,54 +33,71 @@ namespace ProjetoMosquitoVelho
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             double num1, num2, resp = 0;
-            num1 = Convert.ToDouble(txtValor1.Text);
-            num2 = Convert.ToDouble(txtValor2.Text);
 
-            //resp = num1 + num2; *ex de calculo sem classe de operações*
+            /* if (txtValor1.Equals("") && txtValor2.Equals(""))
+             {
+                 MessageBox.Show("coloque um valor numérico");
+             } else {    transferir essa chave pro final}     */
+            try
+            {
+                num1 = Convert.ToDouble(txtValor1.Text);
+                num2 = Convert.ToDouble(txtValor2.Text);
+
+                //resp = num1 + num2; *ex de calculo sem classe de operações*
 
 
-            //caso objetivo não esteja publico é necessairo estanciar o objetivo
-            //(ex: resp = operacoes.*não achou, necessario estanciar objetivo/classe*
-            //cria uma variável.
-            //tipo da variáveis - nome da variavels = instânciar - método
-            Operacoes op = new Operacoes();
+                //caso objetivo não esteja publico é necessairo estanciar o objetivo
+                //(ex: resp = operacoes.*não achou, necessario estanciar objetivo/classe*
+                //cria uma variável.
+                //tipo da variáveis - nome da variavels = instânciar - método
+                Operacoes op = new Operacoes();
 
-            if (rbtnSoma.Checked)
-            {
-                resp = op.somar(num1, num2);
-            }
-            if (rbtnSub.Checked)
-            {
-                resp = op.subtrair(num1, num2);
-            }
-            if (rbtnMult.Checked)
-            {
-                resp = op.multiplicar(num1, num2);
-            }
-            if (rbtnDiv.Checked)
-            {
-                if (num2 == 0)
+                if (rbtnSoma.Checked)
                 {
-                    MessageBox.Show("impossivel divisão por " + num2, "SistemaABC", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                    //executar o metodo limpar campos
+                    resp = op.somar(num1, num2);
+                }
+                if (rbtnSub.Checked)
+                {
+                    resp = op.subtrair(num1, num2);
+                }
+                if (rbtnMult.Checked)
+                {
+                    resp = op.multiplicar(num1, num2);
+                }
+                if (rbtnDiv.Checked)
+                {
+                    if (num2 == 0)
+                    {
+                        MessageBox.Show("impossivel divisão por " + num2, "SistemaABC", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                        //executar o metodo limpar campos
 
-                    limparCampos();
+                        limparCampos();
 
-                    //exemplo:
-                    //MessageBox.Show("impossivel divisão por 0", "SistemaABC", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+                        //exemplo:
+                        //MessageBox.Show("impossivel divisão por 0", "SistemaABC", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+
+                    }
+                    else
+                    {
+                        resp = op.dividir(num1, num2);
+                    }
 
                 }
-                else
-                {
-                    resp = op.dividir(num1, num2);
-                }
 
+
+                lblResp.Text = resp.ToString();
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("coloque um valor numérico");
+                limparCampos();
+               
             }
 
 
-            lblResp.Text = resp.ToString();
-
-        }
+            }
+        
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
