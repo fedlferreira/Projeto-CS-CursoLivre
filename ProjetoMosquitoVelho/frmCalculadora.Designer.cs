@@ -168,6 +168,7 @@ namespace ProjetoMosquitoVelho
             this.btnCalcular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
             this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCalcular.Image = ((System.Drawing.Image)(resources.GetObject("btnCalcular.Image")));
             this.btnCalcular.Location = new System.Drawing.Point(333, 98);
             this.btnCalcular.Name = "btnCalcular";

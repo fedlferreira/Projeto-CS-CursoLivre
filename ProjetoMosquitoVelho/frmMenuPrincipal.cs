@@ -23,5 +23,19 @@ namespace ProjetoMosquitoVelho
             voltar.ShowDialog(); // show dialog para a janela ficar como principal e não entrar em segundo plano.
             this.Hide(); // esconder janela - a unica que fecha é o login com sair.
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmLogin voltar = new frmLogin();
+            voltar.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnFuncionarios_Click(object sender, EventArgs e)
+        {
+            frmFuncionarios abrir = new frmFuncionarios();
+            abrir.ShowDialog();
+            this.Hide();
+        }
     }
 }

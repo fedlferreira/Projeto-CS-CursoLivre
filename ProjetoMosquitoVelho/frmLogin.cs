@@ -37,7 +37,7 @@ namespace ProjetoMosquitoVelho
             } 
             else
             {
-                MessageBox.Show("Usuário e senhas inválidos.");
+                //MessageBox.Show("Usuário e senhas inválidos.");
                 limparCampos();
             }
         }
@@ -46,6 +46,22 @@ namespace ProjetoMosquitoVelho
             txtSenha.Clear();
             txtUsuario.Clear();
             txtUsuario.Focus();
+        }
+
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                txtSenha.Focus();
+            }
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnEntrar.Focus();
+            }
         }
     }
 }
