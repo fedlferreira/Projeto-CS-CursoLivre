@@ -30,7 +30,7 @@ namespace ProjetoMosquitoVelho
         {
             if (txtUsuario.Text.Equals("admin") && txtSenha.Text.Equals("123"))
             {
-                MessageBox.Show("Bem Vindo ao Sistema!");
+                //MessageBox.Show("Bem Vindo ao Sistema!");
                 frmMenuPrincipal abrir = new frmMenuPrincipal(); // instanciar o formulario para abri-lo
                 abrir.ShowDialog(); // show dialog abre a janela de modo que ela não feche.
                 this.Hide(); //esconde a janela que está
