@@ -253,7 +253,7 @@ namespace ProjetoMosquitoVelho
             this.MaximizeBox = false;
             this.Name = "frmProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema ABC - Produtos";
+            this.Text = "Produtos";
             this.Load += new System.EventHandler(this.frmProdutos_Load);
             this.pnlCrud.ResumeLayout(false);
             this.ResumeLayout(false);
