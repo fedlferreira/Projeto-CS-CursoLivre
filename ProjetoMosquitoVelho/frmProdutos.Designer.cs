@@ -58,17 +58,19 @@ namespace ProjetoMosquitoVelho
             this.pnlCrud.Controls.Add(this.btnExcluir);
             this.pnlCrud.Controls.Add(this.btnPesquisar);
             this.pnlCrud.Controls.Add(this.btnVoltar);
-            this.pnlCrud.Location = new System.Drawing.Point(1, 389);
+            this.pnlCrud.Location = new System.Drawing.Point(1, 479);
+            this.pnlCrud.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlCrud.Name = "pnlCrud";
-            this.pnlCrud.Size = new System.Drawing.Size(802, 61);
+            this.pnlCrud.Size = new System.Drawing.Size(1069, 75);
             this.pnlCrud.TabIndex = 3;
             // 
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(572, 13);
+            this.btnLimpar.Location = new System.Drawing.Point(763, 16);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(110, 37);
+            this.btnLimpar.Size = new System.Drawing.Size(147, 46);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -76,9 +78,10 @@ namespace ProjetoMosquitoVelho
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Location = new System.Drawing.Point(2, 13);
+            this.btnNovo.Location = new System.Drawing.Point(3, 16);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(110, 37);
+            this.btnNovo.Size = new System.Drawing.Size(147, 46);
             this.btnNovo.TabIndex = 5;
             this.btnNovo.Text = "&Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -86,9 +89,10 @@ namespace ProjetoMosquitoVelho
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(115, 13);
+            this.btnCadastrar.Location = new System.Drawing.Point(153, 16);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(110, 37);
+            this.btnCadastrar.Size = new System.Drawing.Size(147, 46);
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -96,9 +100,10 @@ namespace ProjetoMosquitoVelho
             // btnAlterar
             // 
             this.btnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlterar.Location = new System.Drawing.Point(229, 13);
+            this.btnAlterar.Location = new System.Drawing.Point(305, 16);
+            this.btnAlterar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(110, 37);
+            this.btnAlterar.Size = new System.Drawing.Size(147, 46);
             this.btnAlterar.TabIndex = 3;
             this.btnAlterar.Text = "&Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
@@ -106,9 +111,10 @@ namespace ProjetoMosquitoVelho
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(345, 13);
+            this.btnExcluir.Location = new System.Drawing.Point(460, 16);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(110, 37);
+            this.btnExcluir.Size = new System.Drawing.Size(147, 46);
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "&Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -116,9 +122,10 @@ namespace ProjetoMosquitoVelho
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.Location = new System.Drawing.Point(459, 13);
+            this.btnPesquisar.Location = new System.Drawing.Point(612, 16);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(110, 37);
+            this.btnPesquisar.Size = new System.Drawing.Size(147, 46);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -126,9 +133,10 @@ namespace ProjetoMosquitoVelho
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(685, 13);
+            this.btnVoltar.Location = new System.Drawing.Point(913, 16);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(110, 37);
+            this.btnVoltar.Size = new System.Drawing.Size(147, 46);
             this.btnVoltar.TabIndex = 0;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -138,10 +146,11 @@ namespace ProjetoMosquitoVelho
             // 
             this.ltbProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltbProdutos.FormattingEnabled = true;
-            this.ltbProdutos.ItemHeight = 20;
-            this.ltbProdutos.Location = new System.Drawing.Point(305, 80);
+            this.ltbProdutos.ItemHeight = 25;
+            this.ltbProdutos.Location = new System.Drawing.Point(407, 98);
+            this.ltbProdutos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ltbProdutos.Name = "ltbProdutos";
-            this.ltbProdutos.Size = new System.Drawing.Size(255, 224);
+            this.ltbProdutos.Size = new System.Drawing.Size(339, 254);
             this.ltbProdutos.TabIndex = 3;
             this.ltbProdutos.SelectedIndexChanged += new System.EventHandler(this.ltbProdutos_SelectedIndexChanged);
             // 
@@ -149,28 +158,31 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblProduto.AutoSize = true;
             this.lblProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduto.Location = new System.Drawing.Point(59, 57);
+            this.lblProduto.Location = new System.Drawing.Point(79, 70);
+            this.lblProduto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProduto.Name = "lblProduto";
-            this.lblProduto.Size = new System.Drawing.Size(122, 20);
+            this.lblProduto.Size = new System.Drawing.Size(148, 25);
             this.lblProduto.TabIndex = 5;
             this.lblProduto.Text = "Digite o produto";
             // 
             // txtProduto
             // 
             this.txtProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduto.Location = new System.Drawing.Point(59, 80);
+            this.txtProduto.Location = new System.Drawing.Point(79, 98);
+            this.txtProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProduto.MaxLength = 25;
             this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(212, 26);
+            this.txtProduto.Size = new System.Drawing.Size(281, 30);
             this.txtProduto.TabIndex = 0;
             this.txtProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProduto_KeyDown);
             // 
             // btnInserir
             // 
             this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInserir.Location = new System.Drawing.Point(59, 122);
+            this.btnInserir.Location = new System.Drawing.Point(79, 150);
+            this.btnInserir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(85, 42);
+            this.btnInserir.Size = new System.Drawing.Size(113, 52);
             this.btnInserir.TabIndex = 1;
             this.btnInserir.Text = "&Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
@@ -180,18 +192,20 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblProdutos.AutoSize = true;
             this.lblProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProdutos.Location = new System.Drawing.Point(305, 57);
+            this.lblProdutos.Location = new System.Drawing.Point(407, 70);
+            this.lblProdutos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProdutos.Name = "lblProdutos";
-            this.lblProdutos.Size = new System.Drawing.Size(140, 20);
+            this.lblProdutos.Size = new System.Drawing.Size(173, 25);
             this.lblProdutos.TabIndex = 8;
             this.lblProdutos.Text = "Produtos inseridos";
             // 
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemover.Location = new System.Drawing.Point(186, 122);
+            this.btnRemover.Location = new System.Drawing.Point(248, 150);
+            this.btnRemover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(85, 42);
+            this.btnRemover.Size = new System.Drawing.Size(113, 52);
             this.btnRemover.TabIndex = 2;
             this.btnRemover.Text = "&Remover";
             this.btnRemover.UseVisualStyleBackColor = true;
@@ -201,9 +215,10 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblProdutoSelecionado.AutoSize = true;
             this.lblProdutoSelecionado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProdutoSelecionado.Location = new System.Drawing.Point(59, 188);
+            this.lblProdutoSelecionado.Location = new System.Drawing.Point(79, 231);
+            this.lblProdutoSelecionado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProdutoSelecionado.Name = "lblProdutoSelecionado";
-            this.lblProdutoSelecionado.Size = new System.Drawing.Size(154, 20);
+            this.lblProdutoSelecionado.Size = new System.Drawing.Size(190, 25);
             this.lblProdutoSelecionado.TabIndex = 9;
             this.lblProdutoSelecionado.Text = "Produto selecionado";
             // 
@@ -211,17 +226,18 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblEscolhido.AutoSize = true;
             this.lblEscolhido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEscolhido.Location = new System.Drawing.Point(59, 228);
+            this.lblEscolhido.Location = new System.Drawing.Point(79, 281);
+            this.lblEscolhido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEscolhido.Name = "lblEscolhido";
-            this.lblEscolhido.Size = new System.Drawing.Size(76, 20);
+            this.lblEscolhido.Size = new System.Drawing.Size(95, 25);
             this.lblEscolhido.TabIndex = 10;
             this.lblEscolhido.Text = "escolhido";
             // 
             // frmProdutos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lblEscolhido);
             this.Controls.Add(this.lblProdutoSelecionado);
             this.Controls.Add(this.btnRemover);
@@ -233,6 +249,7 @@ namespace ProjetoMosquitoVelho
             this.Controls.Add(this.pnlCrud);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frmProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
