@@ -25,7 +25,27 @@ namespace ProjetoMosquitoVelho
         public frmListarProdutos()
         {
             InitializeComponent();
+
+            carregaCombo();
+
         }
+        public void carregaCombo(){
+            produtos[0] = "banana";
+            produtos[1] = "maça";
+            produtos[2] = "morango";
+            produtos[3] = "limão";
+            produtos[4] = "abacaxi";
+            produtos[5] = "tomate";
+            produtos[6] = "pera";
+            produtos[7] = "laranja";
+            produtos[8] = "melancia";
+            produtos[9] = "manga";
+            for (int i = 0; i < produtos.Length; i++)
+            {
+                cbbProdutos.Items.Add(produtos[i]);
+            }
+        }
+
 
         private void frmListarProdutos_Load(object sender, EventArgs e)
         {
@@ -34,11 +54,12 @@ namespace ProjetoMosquitoVelho
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
 
+        // criar um vetor
+        string[] produtos = new string[10];
+
         private void btnCarregar_Click(object sender, EventArgs e)
         {
-            // criar um vetor
-            string [] produtos = new string [10];
-            //inserindo valor no array
+            /*inserindo valor no array
             produtos[0] = "banana";
             produtos[1] = "maça";
             produtos[2] = "morango";
@@ -46,8 +67,30 @@ namespace ProjetoMosquitoVelho
             produtos[4] = "abacaxi";
             produtos[5] = "tomate";
 
-            MessageBox.Show("produtos", produtos[0]); 
-            MessageBox.Show("produtos", produtos[5]);
+            MessageBox.Show("produto " + produtos[0]); 
+            MessageBox.Show("produto " + produtos[5]);*/
+
+            produtos[0] = "banana";
+            produtos[1] = "maça";
+            produtos[2] = "morango";
+            produtos[3] = "limão";
+            produtos[4] = "abacaxi";
+            produtos[5] = "tomate";
+            produtos[6] = "pera";
+            produtos[7] = "laranja";
+            produtos[8] = "melancia";
+            produtos[9] = "manga";
+
+            //limpando itens da lista
+            ltbListaProdutos.Items.Clear();
+
+            //percorrendo valores
+            for (int i = 0; i < produtos.Length; i++)
+            { 
+                ltbListaProdutos.Items.Add(produtos[i]);
+            }
+                       
+
         }
     }
 }
