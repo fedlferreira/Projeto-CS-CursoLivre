@@ -33,5 +33,21 @@ namespace ProjetoMosquitoVelho
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
+
+        private void btnCarregar_Click(object sender, EventArgs e)
+        {
+            // criar um vetor
+            string [] produtos = new string [10];
+            //inserindo valor no array
+            produtos[0] = "banana";
+            produtos[1] = "maça";
+            produtos[2] = "morango";
+            produtos[3] = "limão";
+            produtos[4] = "abacaxi";
+            produtos[5] = "tomate";
+
+            MessageBox.Show("produtos", produtos[0]); 
+            MessageBox.Show("produtos", produtos[5]);
+        }
     }
 }

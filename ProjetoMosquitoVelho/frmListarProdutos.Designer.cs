@@ -31,7 +31,7 @@ namespace ProjetoMosquitoVelho
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListarProdutos));
             this.btnCarregar = new System.Windows.Forms.Button();
-            this.lstProdutos = new System.Windows.Forms.ListBox();
+            this.ltbListaProdutos = new System.Windows.Forms.ListBox();
             this.cbbProdutos = new System.Windows.Forms.ComboBox();
             this.lbLProdutos = new System.Windows.Forms.Label();
             this.lblListaProdutos = new System.Windows.Forms.Label();
@@ -46,16 +46,17 @@ namespace ProjetoMosquitoVelho
             this.btnCarregar.TabIndex = 0;
             this.btnCarregar.Text = "Carregar";
             this.btnCarregar.UseVisualStyleBackColor = true;
+            this.btnCarregar.Click += new System.EventHandler(this.btnCarregar_Click);
             // 
-            // lstProdutos
+            // ltbListaProdutos
             // 
-            this.lstProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lstProdutos.FormattingEnabled = true;
-            this.lstProdutos.ItemHeight = 20;
-            this.lstProdutos.Location = new System.Drawing.Point(190, 74);
-            this.lstProdutos.Name = "lstProdutos";
-            this.lstProdutos.Size = new System.Drawing.Size(185, 284);
-            this.lstProdutos.TabIndex = 1;
+            this.ltbListaProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ltbListaProdutos.FormattingEnabled = true;
+            this.ltbListaProdutos.ItemHeight = 20;
+            this.ltbListaProdutos.Location = new System.Drawing.Point(190, 74);
+            this.ltbListaProdutos.Name = "ltbListaProdutos";
+            this.ltbListaProdutos.Size = new System.Drawing.Size(185, 284);
+            this.ltbListaProdutos.TabIndex = 1;
             // 
             // cbbProdutos
             // 
@@ -95,7 +96,7 @@ namespace ProjetoMosquitoVelho
             this.Controls.Add(this.lblListaProdutos);
             this.Controls.Add(this.lbLProdutos);
             this.Controls.Add(this.cbbProdutos);
-            this.Controls.Add(this.lstProdutos);
+            this.Controls.Add(this.ltbListaProdutos);
             this.Controls.Add(this.btnCarregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -112,7 +113,7 @@ namespace ProjetoMosquitoVelho
         #endregion
 
         private System.Windows.Forms.Button btnCarregar;
-        private System.Windows.Forms.ListBox lstProdutos;
+        private System.Windows.Forms.ListBox ltbListaProdutos;
         private System.Windows.Forms.ComboBox cbbProdutos;
         private System.Windows.Forms.Label lbLProdutos;
         private System.Windows.Forms.Label lblListaProdutos;
