@@ -40,19 +40,13 @@ namespace ProjetoMosquitoVelho
             produtos[7] = "laranja";
             produtos[8] = "melancia";
             produtos[9] = "manga";
+
             for (int i = 0; i < produtos.Length; i++)
             {
                 cbbProdutos.Items.Add(produtos[i]);
             }
         }
 
-
-        private void frmListarProdutos_Load(object sender, EventArgs e)
-        {
-            IntPtr hMenu = GetSystemMenu(this.Handle, false);
-            int MenuCount = GetMenuItemCount(hMenu) - 1;
-            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
-        }
 
         // criar um vetor
         string[] produtos = new string[10];
@@ -92,5 +86,34 @@ namespace ProjetoMosquitoVelho
                        
 
         }
+
+        private void cbbListarItens_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbListarItens_MouseClick(object sender, MouseEventArgs e)
+        {
+            produtos[0] = "banana";
+            produtos[1] = "maça";
+            produtos[2] = "morango";
+            produtos[3] = "limão";
+            produtos[4] = "abacaxi";
+            produtos[5] = "tomate";
+            produtos[6] = "pera";
+            produtos[7] = "laranja";
+            produtos[8] = "melancia";
+            produtos[9] = "manga";
+
+            //limpando itens da lista 
+            cbbListarItens.Items.Clear();
+
+            for (int i = 0; i < produtos.Length; i++)
+            {
+                cbbListarItens.Items.Add(produtos[i]);
+            }
+        
+
     }
+}
 }

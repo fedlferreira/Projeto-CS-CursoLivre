@@ -35,6 +35,8 @@ namespace ProjetoMosquitoVelho
             this.cbbProdutos = new System.Windows.Forms.ComboBox();
             this.lbLProdutos = new System.Windows.Forms.Label();
             this.lblListaProdutos = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbbListarItens = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnCarregar
@@ -53,7 +55,7 @@ namespace ProjetoMosquitoVelho
             this.ltbListaProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.ltbListaProdutos.FormattingEnabled = true;
             this.ltbListaProdutos.ItemHeight = 20;
-            this.ltbListaProdutos.Location = new System.Drawing.Point(190, 74);
+            this.ltbListaProdutos.Location = new System.Drawing.Point(458, 96);
             this.ltbListaProdutos.Name = "ltbListaProdutos";
             this.ltbListaProdutos.Size = new System.Drawing.Size(185, 284);
             this.ltbListaProdutos.TabIndex = 1;
@@ -82,17 +84,40 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblListaProdutos.AutoSize = true;
             this.lblListaProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblListaProdutos.Location = new System.Drawing.Point(187, 39);
+            this.lblListaProdutos.Location = new System.Drawing.Point(455, 61);
             this.lblListaProdutos.Name = "lblListaProdutos";
             this.lblListaProdutos.Size = new System.Drawing.Size(136, 20);
             this.lblListaProdutos.TabIndex = 4;
             this.lblListaProdutos.Text = "Lista De Produtos";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(201, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Tag = "";
+            this.label1.Text = "Listar Itens";
+            // 
+            // cbbListarItens
+            // 
+            this.cbbListarItens.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbbListarItens.FormattingEnabled = true;
+            this.cbbListarItens.Location = new System.Drawing.Point(205, 74);
+            this.cbbListarItens.Name = "cbbListarItens";
+            this.cbbListarItens.Size = new System.Drawing.Size(121, 28);
+            this.cbbListarItens.TabIndex = 5;
+            this.cbbListarItens.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbbListarItens_MouseClick);
             // 
             // frmListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbbListarItens);
             this.Controls.Add(this.lblListaProdutos);
             this.Controls.Add(this.lbLProdutos);
             this.Controls.Add(this.cbbProdutos);
@@ -104,7 +129,7 @@ namespace ProjetoMosquitoVelho
             this.Name = "frmListarProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarProdutos";
-            this.Load += new System.EventHandler(this.frmListarProdutos_Load);
+            this.Load += new System.EventHandler(this.cbbListarItens_MouseHover);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +142,7 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.ComboBox cbbProdutos;
         private System.Windows.Forms.Label lbLProdutos;
         private System.Windows.Forms.Label lblListaProdutos;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbbListarItens;
     }
 }
