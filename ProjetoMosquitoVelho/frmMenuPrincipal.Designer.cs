@@ -44,10 +44,9 @@ namespace ProjetoMosquitoVelho
             // btnFuncionarios
             // 
             this.btnFuncionarios.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionarios.Image")));
-            this.btnFuncionarios.Location = new System.Drawing.Point(37, 27);
-            this.btnFuncionarios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFuncionarios.Location = new System.Drawing.Point(28, 22);
             this.btnFuncionarios.Name = "btnFuncionarios";
-            this.btnFuncionarios.Size = new System.Drawing.Size(213, 185);
+            this.btnFuncionarios.Size = new System.Drawing.Size(160, 150);
             this.btnFuncionarios.TabIndex = 2;
             this.btnFuncionarios.Text = "&Funcionários";
             this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -58,10 +57,9 @@ namespace ProjetoMosquitoVelho
             // btnTarefas
             // 
             this.btnTarefas.Image = ((System.Drawing.Image)(resources.GetObject("btnTarefas.Image")));
-            this.btnTarefas.Location = new System.Drawing.Point(37, 270);
-            this.btnTarefas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTarefas.Location = new System.Drawing.Point(28, 219);
             this.btnTarefas.Name = "btnTarefas";
-            this.btnTarefas.Size = new System.Drawing.Size(213, 185);
+            this.btnTarefas.Size = new System.Drawing.Size(160, 150);
             this.btnTarefas.TabIndex = 3;
             this.btnTarefas.Text = "&Tarefas";
             this.btnTarefas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -71,10 +69,9 @@ namespace ProjetoMosquitoVelho
             // btnClientes
             // 
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
-            this.btnClientes.Location = new System.Drawing.Point(287, 27);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClientes.Location = new System.Drawing.Point(215, 22);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(213, 185);
+            this.btnClientes.Size = new System.Drawing.Size(160, 150);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "&Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -84,10 +81,9 @@ namespace ProjetoMosquitoVelho
             // btnUsuarios
             // 
             this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
-            this.btnUsuarios.Location = new System.Drawing.Point(287, 270);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUsuarios.Location = new System.Drawing.Point(215, 219);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(213, 185);
+            this.btnUsuarios.Size = new System.Drawing.Size(160, 150);
             this.btnUsuarios.TabIndex = 5;
             this.btnUsuarios.Text = "&Usuarios";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -97,10 +93,9 @@ namespace ProjetoMosquitoVelho
             // btnProdutos
             // 
             this.btnProdutos.Image = ((System.Drawing.Image)(resources.GetObject("btnProdutos.Image")));
-            this.btnProdutos.Location = new System.Drawing.Point(543, 27);
-            this.btnProdutos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProdutos.Location = new System.Drawing.Point(407, 22);
             this.btnProdutos.Name = "btnProdutos";
-            this.btnProdutos.Size = new System.Drawing.Size(213, 185);
+            this.btnProdutos.Size = new System.Drawing.Size(160, 150);
             this.btnProdutos.TabIndex = 6;
             this.btnProdutos.Text = "&Produtos";
             this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -111,10 +106,9 @@ namespace ProjetoMosquitoVelho
             // btnFornecedores
             // 
             this.btnFornecedores.Image = ((System.Drawing.Image)(resources.GetObject("btnFornecedores.Image")));
-            this.btnFornecedores.Location = new System.Drawing.Point(543, 270);
-            this.btnFornecedores.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFornecedores.Location = new System.Drawing.Point(407, 219);
             this.btnFornecedores.Name = "btnFornecedores";
-            this.btnFornecedores.Size = new System.Drawing.Size(213, 185);
+            this.btnFornecedores.Size = new System.Drawing.Size(160, 150);
             this.btnFornecedores.TabIndex = 7;
             this.btnFornecedores.Text = "Fo&rnecefores";
             this.btnFornecedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -123,10 +117,9 @@ namespace ProjetoMosquitoVelho
             // btnEventos
             // 
             this.btnEventos.Image = ((System.Drawing.Image)(resources.GetObject("btnEventos.Image")));
-            this.btnEventos.Location = new System.Drawing.Point(796, 27);
-            this.btnEventos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEventos.Location = new System.Drawing.Point(597, 22);
             this.btnEventos.Name = "btnEventos";
-            this.btnEventos.Size = new System.Drawing.Size(213, 185);
+            this.btnEventos.Size = new System.Drawing.Size(160, 150);
             this.btnEventos.TabIndex = 8;
             this.btnEventos.Text = "&Eventos";
             this.btnEventos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -135,10 +128,9 @@ namespace ProjetoMosquitoVelho
             // btnOrcamentos
             // 
             this.btnOrcamentos.Image = ((System.Drawing.Image)(resources.GetObject("btnOrcamentos.Image")));
-            this.btnOrcamentos.Location = new System.Drawing.Point(796, 270);
-            this.btnOrcamentos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOrcamentos.Location = new System.Drawing.Point(597, 219);
             this.btnOrcamentos.Name = "btnOrcamentos";
-            this.btnOrcamentos.Size = new System.Drawing.Size(213, 185);
+            this.btnOrcamentos.Size = new System.Drawing.Size(160, 150);
             this.btnOrcamentos.TabIndex = 9;
             this.btnOrcamentos.Text = "&Orçamentos";
             this.btnOrcamentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -147,10 +139,9 @@ namespace ProjetoMosquitoVelho
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(948, 511);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(711, 415);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 42);
+            this.button1.Size = new System.Drawing.Size(89, 34);
             this.button1.TabIndex = 10;
             this.button1.Text = "&Voltar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -160,9 +151,9 @@ namespace ProjetoMosquitoVelho
             // 
             // frmMenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnOrcamentos);
             this.Controls.Add(this.btnEventos);
@@ -174,11 +165,11 @@ namespace ProjetoMosquitoVelho
             this.Controls.Add(this.btnFuncionarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenuPrincipal";
+            this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.ResumeLayout(false);
 
         }

@@ -65,14 +65,22 @@ namespace ProjetoMosquitoVelho
             //pegando o indice selecionado
             //lblEscolhido.Text = ltbProdutos.SelectedIndex.ToString();
 
-            //pegando o valor selecionado
-            lblEscolhido.Text = ltbProdutos.SelectedItem.ToString();
+            if (ltbProdutos.SelectedItem != null)
+            {
+                //pegando o valor selecionado
+                lblEscolhido.Text = ltbProdutos.SelectedItem.ToString();
+               
+            }
+            
+           
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
             //ltbProdutos.Items.Remove(ltbProdutos.SelectedIndex);
             ltbProdutos.Items.RemoveAt(ltbProdutos.SelectedIndex);
+            lblEscolhido.Text = "";
+            txtProduto.Focus();
         }
     }
 }
