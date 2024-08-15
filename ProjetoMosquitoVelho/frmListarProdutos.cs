@@ -29,6 +29,8 @@ namespace ProjetoMosquitoVelho
             carregaCombo();
 
         }
+
+
         public void carregaCombo(){
             produtos[0] = "banana";
             produtos[1] = "maça";
@@ -89,8 +91,11 @@ namespace ProjetoMosquitoVelho
 
         private void cbbListarItens_MouseHover(object sender, EventArgs e)
         {
-
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
+    
 
         private void cbbListarItens_MouseClick(object sender, MouseEventArgs e)
         {
@@ -115,5 +120,20 @@ namespace ProjetoMosquitoVelho
         
 
     }
-}
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal abrir = new frmMenuPrincipal();
+            abrir.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnTestarPessoa_Click(object sender, EventArgs e)
+        {
+            Pessoa p = new Pessoa();
+            p.Nome = "SENAC";
+
+            lblTestaPessoa.Text = p.Nome;
+        }
+    }
 }

@@ -37,16 +37,20 @@ namespace ProjetoMosquitoVelho
             this.lblListaProdutos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbListarItens = new System.Windows.Forms.ComboBox();
+            this.btnTestarPessoa = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.lblTestaPessoa = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCarregar
             // 
             this.btnCarregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnCarregar.Location = new System.Drawing.Point(12, 321);
+            this.btnCarregar.Location = new System.Drawing.Point(458, 386);
             this.btnCarregar.Name = "btnCarregar";
             this.btnCarregar.Size = new System.Drawing.Size(92, 37);
             this.btnCarregar.TabIndex = 0;
-            this.btnCarregar.Text = "Carregar";
+            this.btnCarregar.Text = "&Carregar";
             this.btnCarregar.UseVisualStyleBackColor = true;
             this.btnCarregar.Click += new System.EventHandler(this.btnCarregar_Click);
             // 
@@ -111,11 +115,56 @@ namespace ProjetoMosquitoVelho
             this.cbbListarItens.TabIndex = 5;
             this.cbbListarItens.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbbListarItens_MouseClick);
             // 
+            // btnTestarPessoa
+            // 
+            this.btnTestarPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnTestarPessoa.Location = new System.Drawing.Point(104, 237);
+            this.btnTestarPessoa.Name = "btnTestarPessoa";
+            this.btnTestarPessoa.Size = new System.Drawing.Size(92, 37);
+            this.btnTestarPessoa.TabIndex = 7;
+            this.btnTestarPessoa.Text = "Testar Pessoa";
+            this.btnTestarPessoa.UseVisualStyleBackColor = true;
+            this.btnTestarPessoa.Click += new System.EventHandler(this.btnTestarPessoa_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnVoltar.Location = new System.Drawing.Point(29, 352);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(92, 37);
+            this.btnVoltar.TabIndex = 8;
+            this.btnVoltar.Text = "&Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // lblTestaPessoa
+            // 
+            this.lblTestaPessoa.AutoSize = true;
+            this.lblTestaPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTestaPessoa.Location = new System.Drawing.Point(210, 222);
+            this.lblTestaPessoa.Name = "lblTestaPessoa";
+            this.lblTestaPessoa.Size = new System.Drawing.Size(115, 20);
+            this.lblTestaPessoa.TabIndex = 9;
+            this.lblTestaPessoa.Tag = "";
+            this.lblTestaPessoa.Text = "Mostra Pessoa";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(-2, 237);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Text = "Digite seu nome";
+            // 
             // frmListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblTestaPessoa);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnTestarPessoa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbbListarItens);
             this.Controls.Add(this.lblListaProdutos);
@@ -144,5 +193,9 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Label lblListaProdutos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbListarItens;
+        private System.Windows.Forms.Button btnTestarPessoa;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Label lblTestaPessoa;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
