@@ -132,7 +132,7 @@ namespace ProjetoMosquitoVelho
         {
             Pessoa p = new Pessoa();
             p.Nome = "SENAC";
-
+            
             lblTestaPessoa.Text = p.Nome;
         }
     }

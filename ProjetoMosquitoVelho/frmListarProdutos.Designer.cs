@@ -40,7 +40,7 @@ namespace ProjetoMosquitoVelho
             this.btnTestarPessoa = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblTestaPessoa = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDigitaNome = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCarregar
@@ -148,20 +148,20 @@ namespace ProjetoMosquitoVelho
             this.lblTestaPessoa.Tag = "";
             this.lblTestaPessoa.Text = "Mostra Pessoa";
             // 
-            // textBox1
+            // txtDigitaNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(-2, 237);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.Text = "Digite seu nome";
+            this.txtDigitaNome.Location = new System.Drawing.Point(-2, 237);
+            this.txtDigitaNome.Name = "txtDigitaNome";
+            this.txtDigitaNome.Size = new System.Drawing.Size(100, 20);
+            this.txtDigitaNome.TabIndex = 10;
+            this.txtDigitaNome.Text = "Digite seu nome";
             // 
             // frmListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDigitaNome);
             this.Controls.Add(this.lblTestaPessoa);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnTestarPessoa);
@@ -196,6 +196,6 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Button btnTestarPessoa;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblTestaPessoa;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDigitaNome;
     }
 }
