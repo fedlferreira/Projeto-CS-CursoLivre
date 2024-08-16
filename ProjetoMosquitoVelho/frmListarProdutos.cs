@@ -130,10 +130,27 @@ namespace ProjetoMosquitoVelho
 
         private void btnTestarPessoa_Click(object sender, EventArgs e)
         {
+            lblTestaPessoa.Text = txtDigitaNome.Text;
+
             Pessoa p = new Pessoa();
-            p.Nome = "SENAC";
-            
+            p.Nome = lblTestaPessoa.Text;
+            txtDigitaNome.Clear();
             lblTestaPessoa.Text = p.Nome;
+            
+        }
+
+        private void btnReservar_Click(object sender, EventArgs e)
+        {
+            
+            Bilhete bilhete = new Bilhete();
+            bilhete.Documento = txtDocumento.Text;
+            bilhete.NumeroCartao = mkdNumeroDoCartao.Text;
+
+            lblMostrarDoc.Text = bilhete.Documento;
+            lblMostrarCar.Text = bilhete.NumeroCartao;
+
+
+
         }
     }
 }

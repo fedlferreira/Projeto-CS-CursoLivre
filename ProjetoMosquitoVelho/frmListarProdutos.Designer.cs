@@ -41,6 +41,14 @@ namespace ProjetoMosquitoVelho
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblTestaPessoa = new System.Windows.Forms.Label();
             this.txtDigitaNome = new System.Windows.Forms.TextBox();
+            this.lblDigiteSeuNome = new System.Windows.Forms.Label();
+            this.btnReservar = new System.Windows.Forms.Button();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNumeroDoCartao = new System.Windows.Forms.Label();
+            this.lblMostrarDoc = new System.Windows.Forms.Label();
+            this.lblMostrarCar = new System.Windows.Forms.Label();
+            this.mkdNumeroDoCartao = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btnCarregar
@@ -118,7 +126,7 @@ namespace ProjetoMosquitoVelho
             // btnTestarPessoa
             // 
             this.btnTestarPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnTestarPessoa.Location = new System.Drawing.Point(104, 237);
+            this.btnTestarPessoa.Location = new System.Drawing.Point(12, 260);
             this.btnTestarPessoa.Name = "btnTestarPessoa";
             this.btnTestarPessoa.Size = new System.Drawing.Size(92, 37);
             this.btnTestarPessoa.TabIndex = 7;
@@ -129,7 +137,7 @@ namespace ProjetoMosquitoVelho
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnVoltar.Location = new System.Drawing.Point(29, 352);
+            this.btnVoltar.Location = new System.Drawing.Point(6, 401);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(92, 37);
             this.btnVoltar.TabIndex = 8;
@@ -141,26 +149,106 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblTestaPessoa.AutoSize = true;
             this.lblTestaPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblTestaPessoa.Location = new System.Drawing.Point(210, 222);
+            this.lblTestaPessoa.Location = new System.Drawing.Point(130, 234);
             this.lblTestaPessoa.Name = "lblTestaPessoa";
-            this.lblTestaPessoa.Size = new System.Drawing.Size(115, 20);
+            this.lblTestaPessoa.Size = new System.Drawing.Size(0, 20);
             this.lblTestaPessoa.TabIndex = 9;
             this.lblTestaPessoa.Tag = "";
-            this.lblTestaPessoa.Text = "Mostra Pessoa";
             // 
             // txtDigitaNome
             // 
-            this.txtDigitaNome.Location = new System.Drawing.Point(-2, 237);
+            this.txtDigitaNome.Location = new System.Drawing.Point(12, 234);
             this.txtDigitaNome.Name = "txtDigitaNome";
             this.txtDigitaNome.Size = new System.Drawing.Size(100, 20);
             this.txtDigitaNome.TabIndex = 10;
-            this.txtDigitaNome.Text = "Digite seu nome";
+            // 
+            // lblDigiteSeuNome
+            // 
+            this.lblDigiteSeuNome.AutoSize = true;
+            this.lblDigiteSeuNome.Location = new System.Drawing.Point(13, 218);
+            this.lblDigiteSeuNome.Name = "lblDigiteSeuNome";
+            this.lblDigiteSeuNome.Size = new System.Drawing.Size(87, 13);
+            this.lblDigiteSeuNome.TabIndex = 11;
+            this.lblDigiteSeuNome.Text = "Digite Seu Nome";
+            // 
+            // btnReservar
+            // 
+            this.btnReservar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnReservar.Location = new System.Drawing.Point(12, 309);
+            this.btnReservar.Name = "btnReservar";
+            this.btnReservar.Size = new System.Drawing.Size(92, 37);
+            this.btnReservar.TabIndex = 12;
+            this.btnReservar.Text = "Reservar";
+            this.btnReservar.UseVisualStyleBackColor = true;
+            this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
+            // 
+            // txtDocumento
+            // 
+            this.txtDocumento.Location = new System.Drawing.Point(162, 325);
+            this.txtDocumento.MaxLength = 15;
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(127, 20);
+            this.txtDocumento.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(159, 309);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Digite Seu Documento";
+            // 
+            // lblNumeroDoCartao
+            // 
+            this.lblNumeroDoCartao.AutoSize = true;
+            this.lblNumeroDoCartao.Location = new System.Drawing.Point(159, 367);
+            this.lblNumeroDoCartao.Name = "lblNumeroDoCartao";
+            this.lblNumeroDoCartao.Size = new System.Drawing.Size(99, 13);
+            this.lblNumeroDoCartao.TabIndex = 18;
+            this.lblNumeroDoCartao.Text = "Digite N. Do Cartão";
+            // 
+            // lblMostrarDoc
+            // 
+            this.lblMostrarDoc.AutoSize = true;
+            this.lblMostrarDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblMostrarDoc.Location = new System.Drawing.Point(281, 232);
+            this.lblMostrarDoc.Name = "lblMostrarDoc";
+            this.lblMostrarDoc.Size = new System.Drawing.Size(0, 20);
+            this.lblMostrarDoc.TabIndex = 19;
+            this.lblMostrarDoc.Tag = "";
+            // 
+            // lblMostrarCar
+            // 
+            this.lblMostrarCar.AutoSize = true;
+            this.lblMostrarCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblMostrarCar.Location = new System.Drawing.Point(281, 277);
+            this.lblMostrarCar.Name = "lblMostrarCar";
+            this.lblMostrarCar.Size = new System.Drawing.Size(0, 20);
+            this.lblMostrarCar.TabIndex = 20;
+            this.lblMostrarCar.Tag = "";
+            // 
+            // mkdNumeroDoCartao
+            // 
+            this.mkdNumeroDoCartao.Location = new System.Drawing.Point(162, 386);
+            this.mkdNumeroDoCartao.Mask = "000,0000,000,000-00";
+            this.mkdNumeroDoCartao.Name = "mkdNumeroDoCartao";
+            this.mkdNumeroDoCartao.Size = new System.Drawing.Size(127, 20);
+            this.mkdNumeroDoCartao.TabIndex = 21;
             // 
             // frmListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mkdNumeroDoCartao);
+            this.Controls.Add(this.lblMostrarCar);
+            this.Controls.Add(this.lblMostrarDoc);
+            this.Controls.Add(this.lblNumeroDoCartao);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.btnReservar);
+            this.Controls.Add(this.lblDigiteSeuNome);
             this.Controls.Add(this.txtDigitaNome);
             this.Controls.Add(this.lblTestaPessoa);
             this.Controls.Add(this.btnVoltar);
@@ -197,5 +285,13 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblTestaPessoa;
         private System.Windows.Forms.TextBox txtDigitaNome;
+        private System.Windows.Forms.Label lblDigiteSeuNome;
+        private System.Windows.Forms.Button btnReservar;
+        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNumeroDoCartao;
+        private System.Windows.Forms.Label lblMostrarDoc;
+        private System.Windows.Forms.Label lblMostrarCar;
+        private System.Windows.Forms.MaskedTextBox mkdNumeroDoCartao;
     }
 }

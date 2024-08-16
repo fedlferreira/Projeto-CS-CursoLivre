@@ -61,5 +61,14 @@ namespace ProjetoMosquitoVelho
             abrir.ShowDialog();
             this.Hide();
         }
+
+        private void btnEventos_Click(object sender, EventArgs e)
+        {
+            frmListarProdutos abrira = new frmListarProdutos();
+            abrira.ShowDialog();
+            this.Hide();
+
+
+        }
     }
 }
