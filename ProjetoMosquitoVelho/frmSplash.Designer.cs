@@ -73,7 +73,6 @@ namespace ProjetoMosquitoVelho
             this.pgbProgresso.Name = "pgbProgresso";
             this.pgbProgresso.Size = new System.Drawing.Size(244, 26);
             this.pgbProgresso.Step = 1;
-            this.pgbProgresso.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.pgbProgresso.TabIndex = 3;
             // 
             // tmrSplash
