@@ -50,6 +50,7 @@ namespace ProjetoMosquitoVelho
             this.label6 = new System.Windows.Forms.Label();
             this.cbbEstado = new System.Windows.Forms.ComboBox();
             this.mskCep = new System.Windows.Forms.MaskedTextBox();
+            this.mskCep2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -250,11 +251,20 @@ namespace ProjetoMosquitoVelho
             this.mskCep.Size = new System.Drawing.Size(100, 26);
             this.mskCep.TabIndex = 14;
             // 
+            // mskCep2
+            // 
+            this.mskCep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mskCep2.Location = new System.Drawing.Point(350, 212);
+            this.mskCep2.Name = "mskCep2";
+            this.mskCep2.Size = new System.Drawing.Size(100, 26);
+            this.mskCep2.TabIndex = 15;
+            // 
             // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mskCep2);
             this.Controls.Add(this.mskCep);
             this.Controls.Add(this.cbbEstado);
             this.Controls.Add(this.label6);
@@ -302,5 +312,6 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbbEstado;
         private System.Windows.Forms.MaskedTextBox mskCep;
+        private System.Windows.Forms.TextBox mskCep2;
     }
 }

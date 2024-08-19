@@ -46,7 +46,7 @@ namespace ProjetoMosquitoVelho
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            buscaCEP(mskCep.Text, "felipeffylepe", "felipepe2011");
+            buscaCEP(mskCep2.Text, "felipeffylepe", "felipepe2011");
         }
     }
 }
