@@ -39,6 +39,7 @@ namespace ProjetoMosquitoVelho
             this.btnEventos = new System.Windows.Forms.Button();
             this.btnOrcamentos = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnFuncionarios
@@ -150,11 +151,21 @@ namespace ProjetoMosquitoVelho
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblUsuario.Location = new System.Drawing.Point(64, 395);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 20);
+            this.lblUsuario.TabIndex = 11;
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnOrcamentos);
             this.Controls.Add(this.btnEventos);
@@ -172,6 +183,7 @@ namespace ProjetoMosquitoVelho
             this.Text = "frmMenuPrincipal";
             this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -185,5 +197,6 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Button btnEventos;
         private System.Windows.Forms.Button btnOrcamentos;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }

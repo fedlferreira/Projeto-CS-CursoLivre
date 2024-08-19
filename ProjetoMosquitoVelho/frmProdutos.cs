@@ -26,6 +26,12 @@ namespace ProjetoMosquitoVelho
         {
             InitializeComponent();
         }
+        public frmProdutos(string nomeUso)
+        {
+            InitializeComponent();
+
+            lblNomeUsu.Text = nomeUso;
+        }
 
         private void frmProdutos_Load(object sender, EventArgs e)
         {
@@ -36,8 +42,11 @@ namespace ProjetoMosquitoVelho
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal abrir = new frmMenuPrincipal();
-            abrir.Show();
+            //frmMenuPrincipal abrir = new frmMenuPrincipal();
+
+            frmMenuPrincipal nome = new frmMenuPrincipal(lblNomeUsu.Text);
+
+            nome.Show();
             this.Hide();
         }
 

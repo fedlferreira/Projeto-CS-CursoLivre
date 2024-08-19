@@ -19,6 +19,14 @@ namespace ProjetoMosquitoVelho
 
         }
 
+        public frmLogin(string nome)
+        {
+            InitializeComponent();
+
+            nome = txtUsuario.Text;
+            
+        }
+
         private void btnSair_Click(object sender, EventArgs e)
         {
             //Close();
@@ -30,9 +38,12 @@ namespace ProjetoMosquitoVelho
         {
             if (txtUsuario.Text.Equals("admin") && txtSenha.Text.Equals("123"))
             {
+                frmMenuPrincipal nome = new frmMenuPrincipal(txtUsuario.Text);
+   
+
                 //MessageBox.Show("Bem Vindo ao Sistema!");
-                frmMenuPrincipal abrir = new frmMenuPrincipal(); // instanciar o formulario para abri-lo
-                abrir.ShowDialog(); // show dialog abre a janela de modo que ela não feche.
+                //frmMenuPrincipal abrir = new frmMenuPrincipal(); // instanciar o formulario para abri-lo
+                nome.ShowDialog(); // show dialog abre a janela de modo que ela não feche.
                 this.Hide(); //esconde a janela que está
             } 
             else

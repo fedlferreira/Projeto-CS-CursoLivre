@@ -25,7 +25,17 @@ namespace ProjetoMosquitoVelho
         public frmMenuPrincipal()
         {
             InitializeComponent();
+         
         }
+
+        public frmMenuPrincipal(string nome) {
+
+            InitializeComponent();
+
+            lblUsuario.Text = nome;
+
+        }
+
 
         private void frmMenuPrincipal_Load(object sender, EventArgs e)
         {
@@ -43,8 +53,9 @@ namespace ProjetoMosquitoVelho
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmLogin voltar = new frmLogin();
-            voltar.ShowDialog();
+            //frmLogin voltar = new frmLogin();
+            frmProdutos nomeUso = new frmProdutos(lblUsuario.Text);
+            nomeUso.ShowDialog();
             this.Hide();
         }
 
@@ -57,8 +68,10 @@ namespace ProjetoMosquitoVelho
 
         private void btnProdutos_Click(object sender, EventArgs e)
         {
-            frmProdutos abrir = new frmProdutos();
-            abrir.ShowDialog();
+            frmProdutos nomeUso = new frmProdutos(lblUsuario.Text);
+
+            //frmProdutos abrir = new frmProdutos();
+            nomeUso.ShowDialog();
             this.Hide();
         }
 
@@ -68,7 +81,7 @@ namespace ProjetoMosquitoVelho
             abrira.ShowDialog();
             this.Hide();
 
-
         }
+
     }
 }

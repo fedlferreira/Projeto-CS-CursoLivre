@@ -152,5 +152,13 @@ namespace ProjetoMosquitoVelho
 
 
         }
+
+        private void btnTestaLogin_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin(txtTestaLogin.Text);
+
+            login.Show();
+
+        }
     }
 }

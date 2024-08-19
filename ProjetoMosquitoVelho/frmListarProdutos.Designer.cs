@@ -49,6 +49,8 @@ namespace ProjetoMosquitoVelho
             this.lblMostrarDoc = new System.Windows.Forms.Label();
             this.lblMostrarCar = new System.Windows.Forms.Label();
             this.mkdNumeroDoCartao = new System.Windows.Forms.MaskedTextBox();
+            this.btnTestaLogin = new System.Windows.Forms.Button();
+            this.txtTestaLogin = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCarregar
@@ -236,11 +238,30 @@ namespace ProjetoMosquitoVelho
             this.mkdNumeroDoCartao.Size = new System.Drawing.Size(127, 20);
             this.mkdNumeroDoCartao.TabIndex = 21;
             // 
+            // btnTestaLogin
+            // 
+            this.btnTestaLogin.Location = new System.Drawing.Point(29, 123);
+            this.btnTestaLogin.Name = "btnTestaLogin";
+            this.btnTestaLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnTestaLogin.TabIndex = 22;
+            this.btnTestaLogin.Text = "Testar Login";
+            this.btnTestaLogin.UseVisualStyleBackColor = true;
+            this.btnTestaLogin.Click += new System.EventHandler(this.btnTestaLogin_Click);
+            // 
+            // txtTestaLogin
+            // 
+            this.txtTestaLogin.Location = new System.Drawing.Point(205, 123);
+            this.txtTestaLogin.Name = "txtTestaLogin";
+            this.txtTestaLogin.Size = new System.Drawing.Size(100, 20);
+            this.txtTestaLogin.TabIndex = 23;
+            // 
             // frmListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtTestaLogin);
+            this.Controls.Add(this.btnTestaLogin);
             this.Controls.Add(this.mkdNumeroDoCartao);
             this.Controls.Add(this.lblMostrarCar);
             this.Controls.Add(this.lblMostrarDoc);
@@ -293,5 +314,7 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Label lblMostrarDoc;
         private System.Windows.Forms.Label lblMostrarCar;
         private System.Windows.Forms.MaskedTextBox mkdNumeroDoCartao;
+        private System.Windows.Forms.Button btnTestaLogin;
+        private System.Windows.Forms.TextBox txtTestaLogin;
     }
 }
