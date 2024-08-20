@@ -55,10 +55,10 @@
     <ApplicationIcon>icodemo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>53A9E5C106061CBB198B95AF812BFD9303826422</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>8EE265B349DE87841CF431D45FF935FA9A935406</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ProjetoMosquitoVelho_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>ProjetoMosquitoVelho_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -358,6 +358,7 @@
     <None Include="Connected Services\WsCorreios\ProjetoMosquitoVelho.WsCorreios.VerificaSeTodosObjetosCanceladosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="ProjetoMosquitoVelho_2_TemporaryKey.pfx" />
     <None Include="ProjetoMosquitoVelho_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
